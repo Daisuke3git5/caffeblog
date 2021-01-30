@@ -15,6 +15,11 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::group(['prefix' => 'admin'], function() {
-    Route::get('caffe/create', 'Admin\CaffeController@add');
+Route::group(['prefix' => 'admin', 'middleware' => 'auth'], function() {
+     Route::get('caffe/create', 'Admin\CaffeController@add');
+     Route::post('caffe/create', 'Admin\CaffeController@create'); 
+     Route::get('caffe', 'Admin\CaffeController@index');
 });
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
