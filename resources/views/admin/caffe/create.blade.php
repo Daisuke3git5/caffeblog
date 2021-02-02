@@ -11,7 +11,7 @@
                 @if (count($errors) > 0)
                     <ul>
                         @foreach($errors->all() as $e)
-                         <li>{{ $e }}</li>
+                            <li>{{ $e }}</li>
                         @endforeach
                     </ul>
                 @endif
@@ -89,8 +89,8 @@
                     <label class="col-md-2">Wi-Fi</label>
                     <div class="col-md-10">
                         <div class="col-md-10">
-                        <label><input type="radio" name="wifi" value="true">有</label>
-                        <label><input type="radio" name="wifi" value="false">無</label>
+                        <label><input type="radio" name="wifi" value="1">有</label>
+                        <label><input type="radio" name="wifi" value="0">無</label>
                         </div>
                     </div>
                 </div>

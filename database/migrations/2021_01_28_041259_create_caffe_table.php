@@ -13,7 +13,7 @@ class CreateCaffeTable extends Migration
      */
     public function up()
     {
-        Schema::create('caffe', function (Blueprint $table) {
+        Schema::create('caffes', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('title');
             $table->string('area');
@@ -40,6 +40,6 @@ class CreateCaffeTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('caffe');
+        Schema::dropIfExists('caffes');
     }
 }
