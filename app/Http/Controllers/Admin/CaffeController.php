@@ -48,8 +48,10 @@ class CaffeController extends Controller
     {
         $cond_title = $request->cond_title;
         if ($cond_title != '') {
+            //検索されたら検索結果を取得する
             $posts = Caffe::where('title', $cond_title)->get();
         } else {
+            //それ以外は全ての記事を取得する
             $posts = Caffe::all();
         }
         return view('admin.caffe.index', ['posts' => $posts, 'cond_title' => $cond_title]);

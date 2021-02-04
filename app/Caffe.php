@@ -21,6 +21,7 @@ class Caffe extends Model
         'price' => 'required',
         'noise' => 'required',
         'comfortable' => 'required',
+        'overstay' => 'required',//追加 2/04
         'body' => 'required',
     );
 }

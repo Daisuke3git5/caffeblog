@@ -4,7 +4,7 @@
 @section('content')
  <div class="container">
      <div class="row">
-         <h2>記事一覧</h2>
+         <h2>ノマド場所一覧</h2>
      </div>
     <div class="row">
         <div class="col-md-4">
@@ -31,8 +31,8 @@
                 <table class="table table-dark">
                     <thead>
                         <tr>
-                            <th width="10%">ID</th>
-                            <th width="20%">タイトル</th>
+                            <th width="10%">記事ID</th>
+                            <th width="20%">お店</th>
                             <th width="50%">本文</th>
                             <th width="10%">操作</th>
                         </tr>

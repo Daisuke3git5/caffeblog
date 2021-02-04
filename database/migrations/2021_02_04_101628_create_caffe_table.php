@@ -22,11 +22,12 @@ class CreateCaffeTable extends Migration
             $table->string('phoneNumber');
             $table->string('siteurl');
             $table->boolean('wifi');
-            $table->integer('powerNumber');
+            $table->string('powerNumber');
             $table->string('seatNumber');
             $table->string('price');
-            $table->integer('noise');
-            $table->integer('comfortable');
+            $table->string('noise');
+            $table->string('comfortable');
+            $table->string('overstay');
             $table->string('body');
             $table->string('image_path')->nullable();
             $table->timestamps();

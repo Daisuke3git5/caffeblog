@@ -161,6 +161,18 @@
                     </div>
                 </div>
                 <div class="form-group row">
+                    <label class="col-md-2">長時間作業</label>
+                    <div class="col-md-10">
+                        <select name="overstay" id="overstay">
+                            <option value="comfort-level">--- 店内での長居は可能か ---</option>
+                            <option value="ng">長居NGの張り紙</option>
+                            <option value="saku">サクッと1時間程度</option>
+                            <option value="vacant">空いていればOK</option>
+                            <option value="welcome">長時間の勉強・お仕事OK</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group row">
                     <label class="col-md-2">本文</label>
                     <div class="col-md-10">
                         <textarea class="form-control" name="body" rows="20">{{ old('body') }}</textarea>
